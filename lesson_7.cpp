@@ -1,7 +1,7 @@
 #include <iostream>
 
 
-// Using conditional operator
+// Using conditional operator.
 int main() {
     std::cout << "let's play?" << std::endl;
     std::cout << "The first player enters a number and the second player must guess the number." << std::endl;
