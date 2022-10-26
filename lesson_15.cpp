@@ -2,24 +2,24 @@
 
 using namespace std;
 
+struct Human
+{
+    string firstName;
+    string lastName;
+    string post;
+    int age;
+    float growth;
+};
+
+// nested structures.
+struct Team
+{
+    Human teamLeader;
+    Human frontendDeveloper;
+    Human backendDeveloper;
+};
+
 int main() {
-    struct Human
-    {
-        string firstName;
-        string lastName;
-        string post;
-        int age;
-        float growth;
-    };
-
-    // nested structures.
-    struct Team
-    {
-        Human teamLeader;
-        Human frontendDeveloper;
-        Human backendDeveloper;
-    };
-
     // create an instance of the structure.
     Team hyperColor;
 
@@ -31,9 +31,4 @@ int main() {
 
     cout << hyperColor.teamLeader.firstName << "'s age: ";
     cout << hyperColor.teamLeader.age << endl;
-    
-
-
-    
-
 }
